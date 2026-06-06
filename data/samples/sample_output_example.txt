@@ -1,0 +1,13 @@
+Draft type: Case Fact Summary
+
+Summary:
+The source documents describe a title search and notice of encumbrances for property matter 2023-AR-4512. Evidence shows a pending mortgage exception (MORT-89021), a notice deadline of 15 April 2024, and a request to confirm the owner's signature. The internal memo also highlights handwritten notes regarding a boundary survey and easement verification.
+
+Evidence citations:
+[1] Title exception: outstanding loan agreement MORT-89021
+[2] Notice deadline: 15 April 2024
+[3] Handwritten annotation: "confirm owner signature"
+[4] Reference to handwritten notes about easement and boundary survey
+
+Conclusion:
+Ground the next draft in the pending encumbrance and title exception, and verify whether the current charge is still active. Further document review is required for the easement annotation and notarization details.

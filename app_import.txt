@@ -1,0 +1,33 @@
+C:\Users\Manjeet\Downloads\ai project\app\services\embedding_service.py:38: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the `langchain-huggingface package and should be used instead. To use it run `pip install -U `langchain-huggingface` and import as `from `langchain_huggingface import HuggingFaceEmbeddings``.
+  embeddings = SentenceTransformerEmbeddings(model_name=self.embedding_model_name)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 199/199 [00:00<00:00, 4005.27it/s]
+C:\Users\Manjeet\Downloads\ai project\app\services\embedding_service.py:40: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the `langchain-chroma package and should be used instead. To use it run `pip install -U `langchain-chroma` and import as `from `langchain_chroma import Chroma``.
+  self.vector_store = Chroma(
+2026-06-05 19:44:07,994 | INFO | ambitio_ai_platform | Initialized Chroma vector store at ./data/chroma
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 199/199 [00:00<00:00, 3966.59it/s]
+2026-06-05 19:44:15,089 | INFO | ambitio_ai_platform | Initialized Chroma vector store at ./data/chroma
+Traceback (most recent call last):
+  File "C:\Users\Manjeet\Downloads\ai project\app\services\generation_service.py", line 11, in import_generation_dependencies
+    from langchain.llms import OpenAI
+ModuleNotFoundError: No module named 'langchain.llms'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\Manjeet\Downloads\ai project\app\main.py", line 4, in <module>
+    from app.api.routes import router
+  File "C:\Users\Manjeet\Downloads\ai project\app\api\routes.py", line 33, in <module>
+    generation_service = GenerationService()
+                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manjeet\Downloads\ai project\app\services\generation_service.py", line 43, in __init__
+    OpenAI = import_generation_dependencies()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Manjeet\Downloads\ai project\app\services\generation_service.py", line 14, in import_generation_dependencies
+    raise ImportError(
+ImportError: Generation dependencies are not installed. Install langchain and OpenAI-compatible libraries.

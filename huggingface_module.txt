@@ -1,0 +1,2 @@
+file=D:\New folder\Lib\site-packages\langchain_classic\embeddings\huggingface.py
+names=[]
